@@ -4549,7 +4549,7 @@ img {
 	margin-top: -125px;
 	border-radius: 3px;
 	padding: 55px 50px 20px;
-	background-color: var(--solapa-twenty-color);
+	background-color: #4a99cd;
 }
 
 .cta-one__title {
@@ -5329,7 +5329,7 @@ img {
 
 .site-footer {
 	position: relative;
-	background-color: #2A97ED;
+	background-color: #d1e2ef;
 }
 
 .footer-widget__column {

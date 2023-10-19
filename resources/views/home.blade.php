@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Trang chủ - Tan Cang technical Services JSC</title>
+    <title>Trang chủ - Tan Cang Technical Services JSC</title>
 
     <!-- Stylesheets -->
     <link href="{{ url('vendors/bootstrap/css/bootstrap.css') }}" rel="stylesheet">
@@ -27,8 +27,8 @@
 
     <!-- Favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ url('images/favicons/apple-touch-icon.png') }}" />
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ url('images/favicons/favicon-32x32.png') }}" />
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ url('images/favicons/favicon-16x16.png') }}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url('images/favicons/favicontcts.gif') }}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url('images/favicons/favicontcts.gif') }}" />
     <link rel="manifest" href="{{ url('images/favicons/site.webmanifest') }}" />
 
     <!-- Responsive -->
@@ -100,7 +100,7 @@
                                             <div class="cta-one__count count-box">
                                                 <span class="count-text" data-speed="4000" data-stop="5">0</span>
                                             </div>
-                                            <div class="cta-one__text">Nhà xưởng phục vụ sản xuất</div>
+                                            <div class="cta-one__text">Nhà xưởng phục vụ sản xuất </div>
                                         </div>
 
                                         <!-- Cta One Single -->
@@ -114,11 +114,12 @@
                                     </div>
 
                                 </div>
-                                <div class="col-lg-6 col-md-12 col-sm-12">
+                                {{-- <div class="col-lg-6 col-md-12 col-sm-12">
                                     <div class="cta-image__one">
-                                        <img src="/images/resource/cta-1.jpg" alt="" />
+                                        <img src="{{ url('images/resource/energy-4.jpg') }}" />
                                     </div>
-                                </div>
+                                </div> --}}
+                                
                             </div>
                         </div>
                     </div>
@@ -140,7 +141,7 @@
         <!-- End News One -->
 
         <!-- Site Footer Start -->
-        @include('user/template.footer')
+        @include('user/template.footer1')
 
     </div>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Tan Cang technical Services JSC</title>
+    <title>Tan Cang Technical Services JSC</title>
 
     <!-- Stylesheets -->
     <link href="{{ url('vendors/bootstrap/css/bootstrap.css') }}" rel="stylesheet">
@@ -38,6 +38,9 @@
     <link href="{{ url('css/solapa.css') }}" rel="stylesheet">
     <link href="{{ url('css/solapa-responsive.css') }}" rel="stylesheet">
     <link href="{{ url('css/timeline.css') }}" rel="stylesheet">
+    <link href="{{ url('css/sotimeline.css') }}" rel="stylesheet">
+      
+
 
     <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]><script src="{{ url('js/respond.js') }}"></script><![endif]-->
@@ -58,7 +61,7 @@
         <!-- End Main Header -->
 
         <!-- Page Title -->
-		<section class="page-title" style="background-image: url({{ url('images/background/2.jpg') }})">
+		{{-- <section class="page-title" style="background-image: url({{ url('images/background/2.jpg') }})">
 			<div class="container">
 				<h1 class="page-main__title">@yield('title')</h1>
 				<ul class="page__breadcrumb">
@@ -67,7 +70,7 @@
 				</ul>
 			</div>
             
-		</section>
+		</section> --}}
 		<!-- End Main Slider Section -->
 
         
@@ -77,7 +80,7 @@
         
         
         <!-- Site Footer Start -->
-        @include('user.template.footer')
+        @include('user.template.footer1')
 
     </div>
 

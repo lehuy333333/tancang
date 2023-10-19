@@ -4,9 +4,9 @@
         <div class="section-title centered">
             <span class="section-title__tagline">Bài viết & Tin tức</span>
             <h2 class="section-title__title">Bài viết mới</h2>
-            <div class="section-title__text">Chúng tôi áp dụng phương pháp tiếp cận cá nhân với từng khách hàng và doanh
+            {{-- <div class="section-title__text">Chúng tôi áp dụng phương pháp tiếp cận cá nhân với từng khách hàng và doanh
                 nghiệp của chúng tôi
-                mô hình được xây dựng trên lòng tin.</div>
+                mô hình được xây dựng trên lòng tin.</div> --}}
         </div>
 
         <div class="row clearfix">

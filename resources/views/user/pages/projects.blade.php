@@ -5,6 +5,15 @@
 @endsection
 
 @section('content')
+<section class="page-title" style="background-image: url({{ url('images/background/energy-5.jpg') }})">
+    <div class="container">
+        <h1 class="page-main__title">@yield('title')</h1>
+        <ul class="page__breadcrumb">
+            <li><a href="{{url('/')}}">home</a></li>
+            <li>@yield('title')</li>
+        </ul>
+    </div>
+</section>
     <!-- Project One -->
     <section class="project-one style-two">
         <div class="container">

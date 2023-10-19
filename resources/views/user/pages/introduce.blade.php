@@ -1,11 +1,20 @@
 @extends('main')
 
-@section('title')
+{{-- @section('title')
     Contact
-@endsection
+@endsection --}}
 
 @section('content')
-	<!-- Contact One -->
+<section class="page-title" style="background-image: url({{ url('images/background/energy-10.jpg') }})">
+    <div class="container">
+        <h1 class="page-main__title">@yield('title')</h1>
+        <ul class="page__breadcrumb">
+            <li><a href="{{url('/')}}">home</a></li>
+            <li>@yield('title')</li>
+        </ul>
+    </div>
+</section>
+    <!-- Contact One -->
     {{-- <section class="page-title" style="background-image: url(assets/images/background/2.jpg)">
         <div class="container">
             <h1 class="page-main__title">About us</h1>
@@ -26,29 +35,6 @@
         <div class="solar-one__shape-four" style="background-image: url(assets/images/shapes/shape-4.png)"></div>
         <div class="container">
             <div class="row clearfix">
-
-                <!-- Image Column -->
-                <div class="solar-one__image-column col-lg-6 col-md-12 col-sm-12">
-                    <div class="solar-one__image-inner-column wow slideInLeft" data-wow-delay="100ms"
-                        data-wow-duration="2500ms">
-                        {{-- <div class="solar-three__color"></div> --}}
-                        {{-- <div class="solar-one__shape-one"
-                            style="background-image: url(assets/images/shapes/shape-5.png)"></div>
-                        <div class="solar-one__shape-two"
-                            style="background-image: url(assets/images/shapes/shape-6.png)"></div> --}}
-                        <div class="solar-two__image">
-                            <img src="{{ url('images/resource/gioithieu.png') }}" alt="" />
-                        </div>
-                        {{-- <div class="solar-one__image-two">
-                            <img src="{{ url('images/resource/energy-1.jpg') }}" alt="" />
-                        </div> --}}
-                        {{-- <div class="solar-one__image-three">
-                            <img src="{{ url('images/resource/gioithieu.jpg') }}" alt="" />
-                        </div> --}}
-                    </div>
-                </div>
-
-                <!-- Content Column -->
                 <div class="solar-one__content-column col-lg-6 col-md-12 col-sm-12">
                     <div class="solar-one__content-inner-column">
                         <!-- Section Title -->
@@ -56,12 +42,24 @@
                             <span class="section-title__tagline">Giới thiệu</span>
                             {{-- <h2 class="section-title__title">Why Choose Our <br> Solar Energy Platform</h2> --}}
                         </div>
-                        <p class="solar-one__text">Tiền thân là Xí nghiệp dịch vụ sửa chữa trực thuộc Tổng Công ty Tân Cảng Sài Gòn, năm 2008 Công ty CP Dịch vụ Kỹ thuật Tân Cảng ra đời với nhiệm vụ bảo đảm công tác kỹ thuật cho toàn bộ trang thiết bị xếp dỡ, phương tiện vận tải hoạt động trên các địa bàn của Tổng Công ty Tân Cảng Sài Gòn trong lãnh thổ Việt Nam.
-                            Bên cạnh đó, với năng lực và kinh nghiệm của mình, Công ty còn cung cấp các dịch vụ: sửa chữa, vệ sinh container bồn; sửa chữa, vệ sinh, PTI container lạnh; sản xuất kết cấu thép, thi công nhà xưởng nhà kho...; vận chuyển hàng siêu trường siêu trọng; sửa chữa, bảo hành, sản xuất và lắp dựng phương tiện, thiết bị khai thác cảng biển cho nhiều hãng và công ty trong khu vực: KALMAR, LIEBHERR, KOCKS, KE – Kranbau Eberswalde (Đức), ZPMC (Trung Quốc), DAEWOO, DOOSAN (Hàn Quốc), UD NISSAN, TCM, MITSUI
+                        <p class="solar-one__text">Tiền thân là Xí nghiệp dịch vụ sửa chữa trực thuộc Tổng Công ty Tân Cảng
+                            Sài Gòn, năm 2008 Công ty CP Dịch vụ Kỹ thuật Tân Cảng ra đời với nhiệm vụ bảo đảm công tác kỹ
+                            thuật cho toàn bộ trang thiết bị xếp dỡ, phương tiện vận tải hoạt động trên các địa bàn của Tổng
+                            Công ty Tân Cảng Sài Gòn trong lãnh thổ Việt Nam.
+                            Bên cạnh đó, với năng lực và kinh nghiệm của mình, Công ty còn cung cấp các dịch vụ: sửa chữa,
+                            vệ sinh container bồn; sửa chữa, vệ sinh, PTI container lạnh; sản xuất kết cấu thép, thi công
+                            nhà xưởng nhà kho...; vận chuyển hàng siêu trường siêu trọng; sửa chữa, bảo hành, sản xuất và
+                            lắp dựng phương tiện, thiết bị khai thác cảng biển cho nhiều hãng và công ty trong khu vực:
+                            KALMAR, LIEBHERR, KOCKS, KE – Kranbau Eberswalde (Đức), ZPMC (Trung Quốc), DAEWOO, DOOSAN (Hàn
+                            Quốc), UD NISSAN, TCM, MITSUI
                             (Nhật Bản)…
-                            </p>
-                            <p class="solar-one__text">Công ty CP DVKT Tân Cảng có một đội ngũ đông đảo trên 250 chuyên gia, kỹ sư chuyên nghiệp cùng với hơn 300 kỹ thuật viên chất lượng cao và sở hữu nhiều chủng loại thiết bị chuyên dụng để phục vụ cho công tác bảo đảm kỹ thuật cho toàn bộ khối trang thiết bị của Tổng Công ty Tân Cảng Sài Gòn trên khắp mọi miền đất nước, các trang thiết bị năng lực thi công của công ty đều có xuất xứ từ các hãng sản xuất danh tiếng ở nước ngoài như: Mỹ, Nhật, Đức, Ý, …
-                                </p>
+                        </p>
+                        <p class="solar-one__text">Công ty CP DVKT Tân Cảng có một đội ngũ đông đảo trên 250 chuyên gia, kỹ
+                            sư chuyên nghiệp cùng với hơn 300 kỹ thuật viên chất lượng cao và sở hữu nhiều chủng loại thiết
+                            bị chuyên dụng để phục vụ cho công tác bảo đảm kỹ thuật cho toàn bộ khối trang thiết bị của Tổng
+                            Công ty Tân Cảng Sài Gòn trên khắp mọi miền đất nước, các trang thiết bị năng lực thi công của
+                            công ty đều có xuất xứ từ các hãng sản xuất danh tiếng ở nước ngoài như: Mỹ, Nhật, Đức, Ý, …
+                        </p>
                         {{-- <p class="solar-one__text-two">Excepteur sint occaecat cupidatat non proident, sunt in culpa
                             qui officia deserunt mollit anim</p> --}}
                         {{-- <div class="row clearfix">
@@ -94,13 +92,129 @@
                         </div> --}}
                     </div>
                 </div>
+                <!-- Image Column -->
+                {{-- <div class="solar-one__image-column col-lg-6 col-md-12 col-sm-12">
+                    <div class="solar-one__image-inner-column wow slideInRight" data-wow-delay="100ms"
+                        data-wow-duration="2500ms">
+                        <div class="solar-three__color"></div>
+                        <div class="solar-one__shape-one" style="background-image: url(assets/images/shapes/shape-5.png)">
+                        </div>
+                        <div class="solar-one__shape-two" style="background-image: url(assets/images/shapes/shape-6.png)">
+                        </div>
+                        <div class="solar-two__image">
+                            <img src="{{ url('images/resource/energy-3.jpg') }}" alt="" />
+                        </div>
+
+                        <div class="solar-one__image-two">
+                            <img src="{{ url('images/resource/energy-2.jpg') }}" alt="" />
+                        </div>
+                        <div class="solar-one__image-three">
+                            <img src="{{ url('images/resource/energy-1.jpg') }}" alt="" />
+                        </div>
+                    </div>
+                </div> --}}
+                <div class="energy-one__images-column col-lg-6 col-md-12 col-sm-12">
+                    <div class="inner-column wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms">
+                        <div class="energy-one__shape-two"
+                            style="background-image: url({{url('/images/shapes/shape-5.png')}})"></div>
+                        <div class="energy-one__shape-three"
+                            style="background-image: url({{url('/images/shapes/shape-6.png')}})"></div>
+                        <div class="energy-one__shape-four"
+                            style="background-image: url({{url('/images/shapes/shape-7.png')}})"></div>
+                        <div class="energy-one__color-three"></div>
+                        <div class="energy-one__image">
+                            <img src="{{url('/images/resource/energy-1.jpg')}}" alt="" width="367" height="296" />
+                        </div>
+                        <div class="energy-one__image-two">
+                            <img src="{{url('/images/resource/energy-2.jpg')}}" alt="" width="261" height="305"  />
+                        </div>
+                        <div class="energy-one__image-three">
+                            <img src="{{url('/images/resource/energy-3.jpg')}}" alt="" width="254" height="364"  />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Column -->
+
 
             </div>
+            {{-- Năng lực phân xưởng --}}
+
+            <div class="row clearfix">
+
+                <!-- Image Column -->
+                <div class="solar-one__image-column col-lg-6 col-md-12 col-sm-12">
+                    <div class="solar-one__image-inner-column wow slideInLeft" data-wow-delay="100ms"
+                        data-wow-duration="2500ms">
+                        {{-- <iframe width="560" height="315" src="https://www.youtube.com/embed/l3B79jE5vbQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe> --}}
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gZg9cdzDjIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>s
+
+                    </div>
+                </div>
+
+                {{-- <div class="solar-one__image-column col-lg-1 col-md-12 col-sm-12">
+                <div class="solar-one__image-inner-column wow slideInLeft" data-wow-delay="100ms"
+                    data-wow-duration="2500ms">
+                    <div class="solar-two__image">
+                        <img src="{{ url('images/resource/gioithieu2.png') }}" alt="" />
+                    </div>
+                    <div class="solar-two__image">
+                        <img src="{{ url('images/resource/gioithieu2.png') }}" alt="" />
+                    </div>
+                    <div class="solar-two__image">
+                        <img src="{{ url('images/resource/gioithieu2.png') }}" alt="" />
+                    </div>
+                    <div class="solar-two__image">
+                        <img src="{{ url('images/resource/gioithieu1.png') }}" alt="" />
+                    </div>
+
+                </div>
+            </div> --}}
+
+                <!-- Content Column -->
+                <div class="solar-one__content-column col-lg-6 col-md-12 col-sm-12">
+                    <div class="solar-one__content-inner-column">
+                        <!-- Section Title -->
+                        {{-- <div class="section-title">
+                            <span class="section-title__tagline">Giới thiệu</span>
+                            <h2 class="section-title__title">Why Choose Our <br> Solar Energy Platform</h2>
+                        </div> --}}
+
+                        <p class="solar-one__text"><b>Tên tiếng Việt:</b>  Công ty Cổ phần Dịch vụ Kỹ thuật Tân Cảng 
+
+                        </p>
+                        <p class="solar-one__text"><b>Tên tiếng anh:</b>  TAN CANG TECHNICAL SERVICES JSC
+
+                        </p>
+                        <p class="solar-one__text"><b>Tên quốc tế:</b>  TAN CANG TECHNICAL SERVICES JOINT STOCK COMPANY  
+
+                        </p>
+                        <p class="solar-one__text"><b>Ngày thành lập:</b>  12/03/2008
+
+                        </p>
+                        <p class="solar-one__text"><b>Địa chỉ trụ sở:</b>  722 Điện Biên Phủ, Phường 22, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam
+
+                        </p>
+
+
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </section>
+                {{-- demo timeline  --}}
+            
+            {{-- end demo timeline  --}}
 
+            {{-- timeline ngang --}}
     <div class="container">
-        <span class="section-title__tagline">Các cột mốc quan trọng</span>
+        <span class="section-title__tagline">Lịch sử hình thành và phát triển</span>
         <div class="row">
             <div class="col-md-12">
                 <div class="main-timeline4">
@@ -143,7 +257,7 @@
                             <div class="inner-content">
                                 <h3 class="title">Đón nhận huân chương</h3>
                                 <p class="description">
-                                Được Chủ tịch nước trao Huân chương Lao động hạng Ba
+                                    Được Chủ tịch nước trao Huân chương Lao động hạng Ba
                                 </p>
                             </div>
                         </a>
@@ -174,7 +288,9 @@
             </div>
         </div>
     </div>
-    <section class="counter-one">   
+
+    {{-- end timeline ngang --}}
+    <section class="counter-one">
         <div class="container">
             <span class="section-title__tagline">CƠ SỞ VẬT CHẤT, NGUỒN LỰC - DANH MỤC CÁC THIẾT BỊ SỞ HỮU </span>
             {{-- <h4>CƠ SỞ VẬT CHẤT, NGUỒN LỰC - DANH MỤC CÁC THIẾT BỊ SỞ HỮU </h4> --}}
@@ -280,6 +396,7 @@
             </div>
         </div>
     </section>
-
-    
 @endsection
+
+
+

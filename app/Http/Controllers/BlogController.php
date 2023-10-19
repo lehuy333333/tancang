@@ -26,10 +26,14 @@ class BlogController extends Controller
 
     public function postBlog(Request $request)
     {
+        dd($request);
         $this->validate(request(), [
             'blog_title'        => 'required',
             'blog_content'      => 'required',
         ]);
+
+        $content = trim($request->get('blog_content'));
+        
         $author_id = Auth::user()->id;
 
         if ($request->hasFile('cover_image')) {

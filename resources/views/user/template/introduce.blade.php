@@ -37,7 +37,7 @@
                             <!-- End Phone Box -->
 
                             <div class="energy-one__btn-box">
-                                <a href="about.html" class="theme-btn btn-style-two"><span
+                                <a href="{{ url('/introduce') }}" class="theme-btn btn-style-two"><span
                                         class="txt">Xem thêm</span></a>
                             </div>
 

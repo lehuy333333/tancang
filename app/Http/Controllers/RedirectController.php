@@ -16,7 +16,7 @@ class RedirectController extends Controller
     {
         $projects = Project::where('homepage_actived', '1')->get();
         $services = Service::where('homepage_actived', '1')->get();
-        $blogs = Blog::where('type_id', 1)->orderBy('id', 'DESC')->skip(0)->take(3)->get();
+        $blogs = Blog::where('type_id', 1)->orderBy('id', 'DESC')->skip(0)->take(6)->get();
         $settings = GlobalSetting::all();
         return view('home', compact('projects', 'services', 'blogs', 'settings'));
     }
@@ -24,6 +24,16 @@ class RedirectController extends Controller
     public function introduce()
     {
         return view('user.pages.introduce');
+    }
+
+    public function vision()
+    {
+        return view('user.pages.vision');
+    }
+
+    public function organization()
+    {
+        return view('user.pages.organization');
     }
 
     public function projects()

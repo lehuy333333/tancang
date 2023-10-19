@@ -111,7 +111,14 @@
                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                             <ul class="main-menu__navigation">
                                 <li><a href="{{ url('/') }}">Trang chủ</a></li>
-                                <li><a href="{{ url('/introduce') }}">Giới thiệu</a></li>
+                                <li class="dropdown"><a href="{{ url('/introduce') }}">Giới thiệu</a>
+                                    <ul>
+                                        <li><a href="{{ url('/introduce') }}">Về chúng tôi</a></li>
+                                        <li><a href="{{ url('/organization') }}">Mô hình tổ chức</a></li>
+                                        <li><a href="{{ url('/vision') }}">Tầm nhìn và sứ mệnh</a></li>
+                                    </ul>
+                                </li>
+                               
                                 <li><a href="{{ url('/services') }}">Dịch vụ</a></li>
                                 <li><a href="{{ url('/projects') }}">Dự án</a></li>
                                 <li><a href="{{ url('/blogs') }}">Tin tức</a></li>
@@ -194,7 +201,7 @@
 
         <nav class="mobile-menu__box">
             <div class="mobile-menu__logo"><a href="{{ url('/') }}"><img
-                        src="{{ asset('images/resource/logo-2.png') }}" alt="" title=""></a></div>
+                        src="{{ asset('images/resource/logotcts.png') }}" alt="" title=""></a></div>
             <div class="mobile-menu__outer">
                 <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
             </div>
@@ -202,18 +209,18 @@
             <!-- Contact List -->
             <ul class="mobile-menu__contact-list">
                 <li><span class="icon fa fa-envelope"></span><a
-                        href="mailto:solapaemail@gmail.com">solapaemail@gmail.com</a></li>
-                <li><span class="icon fa fa-phone"></span><a href="tel:+88-01682648101">+88 01682648101</a>
+                        href="mailto:solapaemail@gmail.com">khkd_dvkt@saigonnewport.com.vn</a></li>
+                <li><span class="icon fa fa-phone"></span><a href="tel:+88-01682648101">+(028). 3742 0177</a>
                 </li>
             </ul>
 
             <!-- Social Box -->
-            <ul class="mobile-menu__social">
+            {{-- <ul class="mobile-menu__social">
                 <li><a href="https://www.instagram.com/" class="fa fa-instagram"></a></li>
                 <li><a href="https://www.facebook.com/" class="fa fa-facebook-f"></a></li>
                 <li><a href="https://www.twitter.com/" class="fa fa-twitter"></a></li>
                 <li><a href="https://www.pinterest.com/" class="fa fa-pinterest-p"></a></li>
-            </ul>
+            </ul> --}}
 
         </nav>
 

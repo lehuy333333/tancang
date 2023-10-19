@@ -24,12 +24,12 @@
                                 <ul class="project-detail__info">
                                     <li>
                                         <span class="icon icon-user"></span>
-                                        Clients:
+                                        Khách hàng:
                                         <strong>{{ $project->client }}</strong>
                                     </li>
                                     <li>
                                         <span class="icon icon-tag-chevron-thin"></span>
-                                        Website:
+                                        Website Khách hàng:
                                         <strong>{{ $project->client_website }}</strong>
                                     </li>
                                 </ul>
@@ -38,7 +38,7 @@
                                 <ul class="project-detail__info">
                                     <li>
                                         <span class="icon icon-clock"></span>
-                                        Date:
+                                        Hoàn thành:
                                         <strong>{{ $project->finish_date }}</strong>
                                     </li>
                                 </ul>

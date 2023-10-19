@@ -32,6 +32,8 @@ Route::get('/page', function () {
 });
 
 Route::get('/introduce', [RedirectController::class, 'introduce'])->name('home_introduce');
+Route::get('/vision', [RedirectController::class, 'vision'])->name('home_vision');
+Route::get('/organization', [RedirectController::class, 'organization'])->name('home_organization');
 Route::get('/projects', [RedirectController::class, 'projects'])->name('home_projects');
 Route::get('/project/{id}', [RedirectController::class, 'projectDetail']);
 

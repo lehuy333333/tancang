@@ -51,163 +51,21 @@
                     </div>
                 </div>
             @endforeach
-
-
-            {{-- <!-- Project One -->
-            <div class="project-one__single">
-                <div class="project-one__image">
-                    <img src="{{ url('images/gallery/gallery-1-2.jpg') }}" alt="" />
-                    <div class="project-one__overlay-box">
-                        <div class="project-one__sub-title">Plant, Solar Plant</div>
-                        <h3 class="project-one__title"><a href="project-detail.html">Solar Installation</a>
-                        </h3>
-                        <a href="project-detail.html" class="project-one__arrow">
-                            <span class="icon-right-arrow-1"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project One -->
-            <div class="project-one__single">
-                <div class="project-one__image">
-                    <img src="{{ url('images/gallery/gallery-1-3.jpg') }}" alt="" />
-                    <div class="project-one__overlay-box">
-                        <div class="project-one__sub-title">Plant, Solar Plant</div>
-                        <h3 class="project-one__title"><a href="project-detail.html">Solar Installation</a>
-                        </h3>
-                        <a href="project-detail.html" class="project-one__arrow">
-                            <span class="icon-right-arrow-1"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project One -->
-            <div class="project-one__single">
-                <div class="project-one__image">
-                    <img src="{{ url('images/gallery/gallery-1-1.jpg') }}" alt="" />
-                    <div class="project-one__overlay-box">
-                        <div class="project-one__sub-title">Plant, Solar Plant</div>
-                        <h3 class="project-one__title"><a href="project-detail.html">Solar Installation</a>
-                        </h3>
-                        <a href="project-detail.html" class="project-one__arrow">
-                            <span class="icon-right-arrow-1"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project One -->
-            <div class="project-one__single">
-                <div class="project-one__image">
-                    <img src="{{ url('images/gallery/gallery-1-2.jpg') }}" alt="" />
-                    <div class="project-one__overlay-box">
-                        <div class="project-one__sub-title">Plant, Solar Plant</div>
-                        <h3 class="project-one__title"><a href="project-detail.html">Solar Installation</a>
-                        </h3>
-                        <a href="project-detail.html" class="project-one__arrow">
-                            <span class="icon-right-arrow-1"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project One -->
-            <div class="project-one__single">
-                <div class="project-one__image">
-                    <img src="{{ url('images/gallery/gallery-1-3.jpg') }}" alt="" />
-                    <div class="project-one__overlay-box">
-                        <div class="project-one__sub-title">Plant, Solar Plant</div>
-                        <h3 class="project-one__title"><a href="project-detail.html">Solar Installation</a>
-                        </h3>
-                        <a href="project-detail.html" class="project-one__arrow">
-                            <span class="icon-right-arrow-1"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project One -->
-            <div class="project-one__single">
-                <div class="project-one__image">
-                    <img src="{{ url('images/gallery/gallery-1-1.jpg') }}" alt="" />
-                    <div class="project-one__overlay-box">
-                        <div class="project-one__sub-title">Plant, Solar Plant</div>
-                        <h3 class="project-one__title"><a href="project-detail.html">Solar Installation</a>
-                        </h3>
-                        <a href="project-detail.html" class="project-one__arrow">
-                            <span class="icon-right-arrow-1"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project One -->
-            <div class="project-one__single">
-                <div class="project-one__image">
-                    <img src="{{ url('images/gallery/gallery-1-2.jpg') }}" alt="" />
-                    <div class="project-one__overlay-box">
-                        <div class="project-one__sub-title">Plant, Solar Plant</div>
-                        <h3 class="project-one__title"><a href="project-detail.html">Solar Installation</a>
-                        </h3>
-                        <a href="project-detail.html" class="project-one__arrow">
-                            <span class="icon-right-arrow-1"></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project One -->
-            <div class="project-one__single">
-                <div class="project-one__image">
-                    <img src="{{ url('images/gallery/gallery-1-3.jpg') }}" alt="" />
-                    <div class="project-one__overlay-box">
-                        <div class="project-one__sub-title">Plant, Solar Plant</div>
-                        <h3 class="project-one__title"><a href="project-detail.html">Solar Installation</a>
-                        </h3>
-                        <a href="project-detail.html" class="project-one__arrow">
-                            <span class="icon-right-arrow-1"></span>
-                        </a>
-                    </div>
-                </div>
-            </div> --}}
         </div>
     </div>
 </section>
+
+
 <section class="project-two">
     <div class="container">
         <div class="project-two__inner-container clearfix">
 
             <div class="pull-right">
                 <div class="project-two__btn-box">
-                    <a href="{{ url('/projects') }}" class="theme-btn btn-style-two"><span class="txt">View All
-                            Project</span></a>
+                    <a href="{{ url('/projects') }}" class="theme-btn btn-style-two"><span class="txt">Tất cả dự án</span></a>
                 </div>
             </div>
         </div>
     </div>
 </section>
 <!-- End Project One -->
-
-<!-- Project Two -->
-{{-- <section class="project-two">
-    <div class="container">
-        <div class="project-two__inner-container clearfix">
-            <div class="pull-left">
-                <h2 class="project-two__title"><span>2316</span> Dự án đã hoàn thành</h2>
-                <div class="project-two__text">Every business is different, that’s why we have different
-                    options
-                    <br> designed to work for different industries
-                </div>
-            </div>
-            <div class="pull-right">
-                <div class="project-two__btn-box">
-                    <a href="{{url('/projects')}}" class="theme-btn btn-style-two"><span class="txt">View All
-                            Project</span></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> --}}
-<!-- End Project Two -->

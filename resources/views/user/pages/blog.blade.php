@@ -6,6 +6,7 @@
 
 @section('content')
 	<!-- News Two -->
+    
     <section class="news-two style-two">
         <div class="container">
             <div class="row clearfix">

@@ -5,6 +5,15 @@
 @endsection
 
 @section('content')
+<section class="page-title" style="background-image: url({{ url('images/background/energy-9.jpg') }})">
+    <div class="container">
+        <h1 class="page-main__title">@yield('title')</h1>
+        <ul class="page__breadcrumb">
+            <li><a href="{{url('/')}}">home</a></li>
+            <li>@yield('title')</li>
+        </ul>
+    </div>
+</section>
 	<!-- Contact One -->
     <section class="contact-one">
         <div class="container">
@@ -80,7 +89,7 @@
     <!-- Contact Map -->
     <section class="contact-map">
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d805184.6331292129!2d144.49266890254142!3d-37.97123689954809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2s!4v1574408946759!5m2!1sen!2s"
+            src="https://maps.google.com/maps?q=1295B - Nguyễn Thị Định - Phường Cát Lái TP. Thủ Đức- TP.HCM&t=&z=10&ie=UTF8&iwloc=&output=embed"
             allowfullscreen=""></iframe>
     </section>
     <!-- End Contact Map -->
